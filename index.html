@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHAP-Uganda | Sustainable Health Action for Development</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Adding Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet">
   <style>
     /* General Styles */
     body {
@@ -83,7 +83,7 @@
       color: white;
       padding: 80px 0;
       text-align: center;
-      background-image: url('https://via.placeholder.com/1600x600.png'); /* Placeholder Image */
+      background-image: url('https://via.placeholder.com/1600x600.png'); /* Replace with actual image URL */
       background-size: cover;
       background-position: center;
     }
@@ -161,7 +161,36 @@
       transition: all 0.3s ease;
     }
 
-    /* Contact Section */
+    /* Stakeholders Section */
+    .stakeholders {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .stakeholder-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      flex: 1 0 20%;
+      max-width: 200px;
+      transition: transform 0.3s ease;
+    }
+
+    .stakeholder-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stakeholder-card h4 {
+      color: #2a7d54;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
     .contact {
       background-color: #f4f4f4;
       padding: 50px 0;
@@ -216,6 +245,17 @@
       .hero p {
         font-size: 20px;
       }
+
+      .stakeholders {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .stakeholder-card {
+        flex: 1 0 80%;
+        max-width: 80%;
+        margin-bottom: 20px;
+      }
     }
   </style>
 </head>
@@ -246,9 +286,7 @@
   <div id="about" class="about">
     <div class="container">
       <h2 class="section-title">About SHAP-Uganda</h2>
-      <p>KAN Sustainable Health Action for Development (SHAP-Uganda) Limited is an indigenous, Not-For-Profit Non-Governmental Organization established in 2021. It was founded by a group of passionate public health professionals to influence development and provide sustainable, integrated, and quality health care services to marginalized and vulnerable communities.</p>
-      <p>We operate in the Districts of Kamuli, Luuka, Buyende, Kayunga, and Namutumba, implementing interventions in the technical areas of Integrated Reproductive Maternal, Newborn, Child, and Adolescent Health services, the prevention and control of major communicable diseases, health promotion, community health initiatives, environmental health, school health, and health system strengthening.</p>
-      <p>Our target beneficiaries include Adolescent Girls, Boys, Young Women (AGYW), Orphans and Vulnerable Children (OVC), Women, Youths, Key and Priority Populations, People Living with HIV (PLHIV), and People Living with Disabilities (PLWD).</p>
+      <p>KAN Sustainable Health Action for Development (SHAP-Uganda) Limited is an indigenous, Not-For-Profit Non-Governmental Organization...</p>
     </div>
   </div>
 
@@ -257,10 +295,10 @@
     <div class="container">
       <h2 class="section-title">Vision & Mission</h2>
       <h3>Our Vision</h3>
-      <p>To achieve a resilient and healthy society through equitable access to essential health services, that contribute to the overall well-being of the people.</p>
+      <p>To achieve a resilient and healthy society through equitable access to essential health services...</p>
 
       <h3>Our Mission</h3>
-      <p>To promote health and sustainable development by providing effective, equitable, and comprehensive services to underserved and vulnerable populations through partnerships, innovations, and community participation.</p>
+      <p>To promote health and sustainable development by providing effective, equitable, and comprehensive services...</p>
     </div>
   </div>
 
@@ -270,17 +308,32 @@
       <h2 class="section-title">Objectives & Aims</h2>
       <h3>Strategic Objectives</h3>
       <ul>
-        <li>Community health system strengthening and health promotion through capacity building and health activities.</li>
-        <li>Community economic empowerment through gender inclusion, child protection, and climate change adaptation.</li>
+        <li>Community health system strengthening...</li>
+        <li>Community economic empowerment...</li>
       </ul>
-      <h3>Specific Objectives</h3>
-      <ul>
-        <li>Promote the availability and accessibility of health care services in communities through awareness and resource mobilization.</li>
-        <li>Support the Government of Uganda in implementing Minimum Primary Health Care Packages.</li>
-        <li>Advocate for and contribute towards a socially, economically, legally, and politically empowered community.</li>
-        <li>Collaborate with stakeholders to provide quality health care services.</li>
-        <li>Contribute to child protection services in the community.</li>
-      </ul>
+    </div>
+  </div>
+
+  <!-- Stakeholders Section -->
+  <div id="stakeholders" class="content-section">
+    <div class="container">
+      <h2 class="section-title">Our Stakeholders</h2>
+      <div class="stakeholders">
+        <div class="stakeholder-card"><h4>Ministry of Health</h4></div>
+        <div class="stakeholder-card"><h4>Ministry of Education</h4></div>
+        <div class="stakeholder-card"><h4>Development Partners</h4></div>
+        <div class="stakeholder-card"><h4>Office of Resident District Commissioner</h4></div>
+        <div class="stakeholder-card"><h4>Security Organs</h4></div>
+        <div class="stakeholder-card"><h4>District Local Government</h4></div>
+        <div class="stakeholder-card"><h4>Schools and Health Facilities</h4></div>
+        <div class="stakeholder-card"><h4>NGOs/CBOs</h4></div>
+        <div class="stakeholder-card"><h4>Community Leaders</h4></div>
+        <div class="stakeholder-card"><h4>Religious Leaders</h4></div>
+        <div class="stakeholder-card"><h4>Cultural Leaders</h4></div>
+        <div class="stakeholder-card"><h4>Community Health Workers</h4></div>
+        <div class="stakeholder-card"><h4>Members of the Community</h4></div>
+        <div class="stakeholder-card"><h4>Staff of SHAP-Uganda</h4></div>
+      </div>
     </div>
   </div>
 
