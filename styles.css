@@ -139,6 +139,34 @@ nav ul li a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Specific Styling for About Us Cards */
+.about-services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-services-list li {
+  margin-bottom: 10px;
+}
+
+/* Target Groups Section */
+.about-target-groups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-target-groups ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .about-us h2 {
     font-size: 30px;
@@ -159,7 +187,6 @@ nav ul li a:hover {
     font-size: 28px;
   }
 }
-
 
 /* Vision & Mission Section */
 .vision-mission {
@@ -182,55 +209,56 @@ nav ul li a:hover {
   color: #555;
 }
 
-/* Objectives Section */
+/* Objectives / Aims Section */
 .objectives {
   padding: 50px 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
 .objectives h2 {
   color: #2a7d54;
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 40px;
 }
 
-.major-objectives .major-title {
-  font-size: 28px;
-  color: #2a7d54;
-  margin-bottom: 20px;
-}
-
-.major-objectives .major-objective {
-  background-color: #e9f5e8;
-  padding: 20px;
-  margin-bottom: 20px;
+.objectives-section {
+  background-color: #ffffff;
+  padding: 25px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-.major-objective h4 {
+.objectives-section h3 {
+  font-size: 24px;
   color: #2a7d54;
-  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-.specific-objectives {
-  margin-top: 15px;
+.objectives-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
-  padding-left: 20px;
+  color: #555;
+  line-height: 1.5;
 }
 
-.specific-objectives .specific {
+.objectives-section ul li {
   margin-bottom: 10px;
 }
 
-.specific-title {
-  font-size: 24px;
-  color: #2a7d54;
+@media screen and (max-width: 768px) {
+  .objectives h2 {
+    font-size: 30px;
+  }
+
+  .objectives-section {
+    padding: 20px;
+  }
 }
 
-.specific ul {
-  padding-left: 40px;
-  font-size: 18px;
-}
 
 /* Stakeholders Section */
 .stakeholders {
