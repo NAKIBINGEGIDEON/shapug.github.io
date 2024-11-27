@@ -69,24 +69,22 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 10px;
     }
 
     .play-card {
       background: #2a7d54;
       color: white;
-      padding: 20px;
+      padding: 15px;
       border-radius: 10px;
-      flex: 1 1 30%;
+      flex: 1 1 20%;
       text-align: center;
+      font-size: 1rem;
     }
 
     .play-card h3 {
       margin: 0 0 10px 0;
-    }
-
-    .play-card p {
-      margin: 0;
+      font-size: 1.1rem;
     }
 
     .footer {
@@ -101,12 +99,39 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Header styles */
+    header {
+      background-color: #2a7d54;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      background-color: #333;
+      border-radius: 5px;
+    }
+
+    header a:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <!-- Header with Home Button -->
+  <header>
+    <a href="#top">Home</a>
+  </header>
+
+  <div class="container" id="top">
     <!-- About Us Section -->
     <div class="section">
       <h2 class="section-title">ABOUT US</h2>
