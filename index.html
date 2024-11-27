@@ -2,188 +2,198 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHAp-Uganda | Empowering Lives, Creating Sustainable Impact</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #2a7d54;
+    }
+
+    .btn {
+      background-color: #2a7d54;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #1e5d40;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #2a7d54;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #2a7d54;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      color: #2a7d54;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    /* About Section */
+    .about {
+      background-color: white;
+      padding: 40px 0;
+    }
+
+    /* Our Projects Section */
+    .projects {
+      background-color: #eaf1f0;
+      padding: 40px 0;
+    }
+
+    .projects .project {
+      background-color: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects .project h3 {
+      color: #2a7d54;
+    }
+
+    /* Join Us Section */
+    .join-us {
+      background-color: #2a7d54;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .join-us a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .join-us a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2a7d54;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+  </style>
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
 
-  <div class="site-wrap">
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#join-us">Join Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero Section -->
-    <div class="site-blocks-cover overlay" style="background-image: url('images/hero_shap.jpg');" data-aos="fade" id="home-section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8 text-center" data-aos="fade-up" data-aos-delay="400">
-            <h1 class="text-white font-weight-light">Empowering Lives, Creating Sustainable Impact</h1>
-            <p><a href="#about-section" class="btn btn-primary py-3 px-5 text-white">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="site-section" id="about-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-5">
-            <img src="images/about_shap.jpg" alt="About SHAp-Uganda" class="img-fluid">
-          </div>
-          <div class="col-lg-5 ml-auto">
-            <h2 class="text-black mb-4">About SHAp-Uganda</h2>
-            <p>SHAp-Uganda is dedicated to improving lives in underserved communities across Uganda. By focusing on health, education, and water sustainability, we aim to create long-term, positive changes for those in need.</p>
-            <p><a href="#projects-section" class="btn btn-primary text-white px-4">Our Projects</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="site-section" id="projects-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center mb-5">
-            <h2 class="text-black text-uppercase section-title">Our Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="block-39">
-              <div class="block-39-img">
-                <img src="images/project_health.jpg" alt="Health & Sanitation" class="img-fluid">
-              </div>
-              <div class="block-39-text">
-                <h3 class="block-39-heading">Health & Sanitation</h3>
-                <p>Providing accessible healthcare services and improving sanitation facilities in rural communities.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="block-39">
-              <div class="block-39-img">
-                <img src="images/project_education.jpg" alt="Educational Empowerment" class="img-fluid">
-              </div>
-              <div class="block-39-text">
-                <h3 class="block-39-heading">Educational Empowerment</h3>
-                <p>Supporting underprivileged children through scholarships, learning materials, and mentorship programs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="block-39">
-              <div class="block-39-img">
-                <img src="images/project_water.jpg" alt="Water Sustainability" class="img-fluid">
-              </div>
-              <div class="block-39-text">
-                <h3 class="block-39-heading">Water Sustainability</h3>
-                <p>Installing clean water systems and educating communities on water conservation and hygiene practices.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Join Us Section -->
-    <div class="site-section bg-image overlay" style="background-image: url('images/join_us.jpg');" id="donate-section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-5 text-center">
-            <h2 class="text-white mb-4">Join Us! Be Part of the Change</h2>
-            <p><a href="https://shap-uganda.org/join" class="btn btn-primary px-4 py-3 btn-block">Join Us</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team Section -->
-    <div class="site-section" id="team-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="text-black text-uppercase section-title">Our Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Repeat team members as needed -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="block-team-member-1 text-center rounded">
-              <figure>
-                <img src="images/person_team1.jpg" alt="Team Member 1" class="img-fluid rounded-circle">
-              </figure>
-              <h3 class="font-size-20 text-black">John Doe</h3>
-              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Founder</span>
-              <p>John leads SHAp-Uganda with a passion for creating sustainable solutions for underserved communities.</p>
-              <div class="block-social-1">
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
-                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/testimonials.jpg');">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="text-white text-uppercase section-title">Testimonials</h2>
-        </div>
-        <div class="owl-carousel nonloop-block-13">
-          <!-- Add testimonials as needed -->
-          <div>
-            <div class="block-testimony-1 text-center">
-              <blockquote class="mb-4">
-                <p>&ldquo;SHAp-Uganda gave our village clean water and hope for a healthier future. We are forever grateful!&rdquo;</p>
-              </blockquote>
-              <figure>
-                <img src="images/person_testimonial1.jpg" alt="Testimonial" class="img-fluid rounded-circle mx-auto">
-              </figure>
-              <h3 class="font-size-20 text-white">Jane Doe</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="footer-heading mb-4">About SHAp-Uganda</h2>
-            <p>We are a nonprofit organization focused on empowering communities through health, education, and sustainability initiatives.</p>
-          </div>
-          <div class="col-md-6">
-            <h2 class="footer-heading mb-4">Contact Us</h2>
-            <ul>
-              <li>Email: info@shap-uganda.org</li>
-              <li>Phone: +256-XXX-XXXXXX</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+  <!-- Hero Section -->
+  <div id="home" class="hero">
+    <h1>Empowering Lives, Creating Sustainable Impact</h1>
+    <p><a href="#about" class="btn">Learn More About Us</a></p>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <!-- About Section -->
+  <div id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About SHAp-Uganda</h2>
+      <p>SHAp-Uganda is a non-profit organization dedicated to improving the lives of underserved communities in Uganda. We focus on three primary areas: health, education, and water sustainability. Our goal is to create sustainable and impactful changes that improve the overall quality of life for vulnerable populations.</p>
+      <p>We strive to ensure access to basic healthcare, provide educational opportunities for children, and promote sustainable water practices in rural communities. Through our projects, we aim to empower individuals and communities, equipping them with the tools they need to thrive.</p>
+    </div>
+  </div>
+
+  <!-- Our Projects Section -->
+  <div id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Our Projects</h2>
+      <div class="project">
+        <h3>Health & Sanitation</h3>
+        <p>SHAp-Uganda focuses on improving access to healthcare and sanitation. We provide health education, medical supplies, and build sanitation facilities in rural communities to reduce the spread of disease and improve the overall well-being of individuals.</p>
+      </div>
+      <div class="project">
+        <h3>Educational Empowerment</h3>
+        <p>We believe that education is key to breaking the cycle of poverty. SHAp-Uganda provides scholarships, educational materials, and training to children and young adults. We focus on creating equal opportunities for all, regardless of background or financial situation.</p>
+      </div>
+      <div class="project">
+        <h3>Water Sustainability</h3>
+        <p>SHAp-Uganda works to provide access to clean, safe drinking water in rural areas. We install water pumps, educate communities on proper water management, and promote hygienic practices to ensure water sustainability and improved health outcomes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Join Us Section -->
+  <div id="join-us" class="join-us">
+    <h2>Join Us! Be Part of the Change</h2>
+    <p>Your support can make a difference! By partnering with SHAp-Uganda, you help bring health, education, and water sustainability to communities in need. Together, we can build a brighter future for all.</p>
+    <p><a href="#contact" class="btn">Get Involved</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>SHAp-Uganda &copy; 2024. All Rights Reserved.</p>
+    <p>Email: info@shap-uganda.org | Phone: +256-XXX-XXXXXX</p>
+  </footer>
+
 </body>
 
 </html>
