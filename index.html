@@ -5,13 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHAP-Uganda | Sustainable Health Action for Development</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet"> <!-- Adding Google Fonts -->
   <style>
     /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
     }
 
@@ -22,25 +23,29 @@
     .btn {
       background-color: #2a7d54;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 25px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .btn:hover {
       background-color: #1e5d40;
+      transform: scale(1.05);
     }
 
     .container {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px 0;
     }
 
     /* Navigation */
     nav {
       background-color: #2a7d54;
-      padding: 10px 0;
+      padding: 15px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     nav ul {
@@ -51,26 +56,42 @@
     }
 
     nav ul li {
-      display: inline;
-      margin: 0 15px;
+      display: inline-block;
+      margin: 0 20px;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
       font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     nav ul li a:hover {
-      text-decoration: underline;
+      color: #f4f4f4;
     }
 
     /* Hero Section */
     .hero {
       background-color: #2a7d54;
       color: white;
-      padding: 60px 0;
+      padding: 80px 0;
       text-align: center;
+      background-image: url('https://via.placeholder.com/1600x600.png'); /* Placeholder Image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 30px;
     }
 
     /* Section Titles */
@@ -78,24 +99,56 @@
       text-align: center;
       color: #2a7d54;
       margin-bottom: 30px;
-      font-size: 28px;
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
     /* About Section */
     .about {
       background-color: white;
       padding: 40px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .about img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    /* Content Section */
+    .content-section {
+      margin-bottom: 40px;
+    }
+
+    .content-section ul {
+      padding-left: 20px;
+    }
+
+    .content-section ul li {
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
     /* Contact Section */
     .contact {
-      background-color: white;
+      background-color: #f4f4f4;
       padding: 40px 0;
       text-align: center;
     }
 
     .contact p {
       font-size: 18px;
+    }
+
+    .contact-info {
+      font-size: 18px;
+      color: #2a7d54;
+      margin-top: 10px;
     }
 
     /* Logo in header */
@@ -106,30 +159,43 @@
       margin: 20px auto;
     }
 
-    .contact-info {
-      font-size: 18px;
-      color: #2a7d54;
-      margin-top: 10px;
-    }
-
     /* Footer */
     footer {
       background-color: #2a7d54;
       color: white;
       text-align: center;
       padding: 20px 0;
+      font-size: 16px;
     }
 
-    .content-section {
-      margin-bottom: 40px;
+    footer a {
+      color: #f4f4f4;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .content-section ul {
-      padding-left: 20px;
+    footer a:hover {
+      color: #1e5d40;
     }
 
-    .content-section ul li {
-      margin-bottom: 10px;
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
@@ -150,7 +216,7 @@
 
   <!-- Hero Section -->
   <div id="home" class="hero">
-    <img src="images\icon.png" alt="SHAP-Uganda Logo" class="logo">
+    <img src="images/icon.png" alt="SHAP-Uganda Logo" class="logo">
     <h1>KAN Sustainable Health Action for Development (SHAP-Uganda)</h1>
     <p>Empowering Communities, Improving Health</p>
     <p><a href="#about" class="btn">Learn More About Us</a></p>
@@ -191,7 +257,7 @@
     </div>
   </div>
 
-  <!-- Objectives / Aims Section -->
+  <!-- Objectives Section -->
   <div id="objectives" class="content-section">
     <div class="container">
       <h2 class="section-title">Objectives & Aims</h2>
