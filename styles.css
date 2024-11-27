@@ -281,17 +281,19 @@ nav ul li a:hover {
 }
 
 .objectives-section {
+  display: flex;
+  justify-content: space-between; /* Align horizontally */
+  gap: 20px; /* Space between the sections */
   background-color: #ffffff;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
 }
 
 .objectives-section h3 {
   font-size: 24px;
   color: #2a7d54;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .objectives-section ul {
@@ -307,16 +309,27 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .objectives h2 {
     font-size: 30px;
   }
 
   .objectives-section {
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .objectives-section ul {
+    padding-left: 20px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .objectives h2 {
+    font-size: 28px;
+  }
+}
 
 /* Stakeholders Section */
 .stakeholders {
