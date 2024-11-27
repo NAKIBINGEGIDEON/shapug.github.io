@@ -22,369 +22,250 @@
       font-weight: 700;
     }
 
-    .btn {
-      background: linear-gradient(to right, #2a7d54, #1e5d40);
-      color: white;
-      padding: 14px 30px;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: linear-gradient(to right, #1e5d40, #2a7d54);
-      transform: translateY(-4px);
-    }
-
     .container {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
-      padding: 40px 0;
     }
 
-    /* Navigation */
-    nav {
-      background-color: #2a7d54;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .section {
+      padding: 50px 0;
     }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 25px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #f4f4f4;
-    }
-
-    /* Hero Section */
-    .hero {
-      background-color: #2a7d54; /* Solid background */
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 100px;
-      height: auto;
-    }
-
-    .hero h1 {
-      font-size: 50px;
-      font-weight: 700;
-      margin-bottom: 25px;
-      color: white;
-    }
-
-    .hero p {
-      font-size: 24px;
-      margin-bottom: 35px;
-      font-weight: 500;
-    }
-
-    /* Vision and Mission Play Cards */
-    .vision-mission {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 50px;
-    }
-
-    .play-card {
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      padding: 20px;
-      width: 45%;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .play-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .play-card h3 {
-      color: #2a7d54;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .play-card p {
-      font-size: 18px;
-      color: #555;
-    }
-
-    /* Section Titles */
     .section-title {
       text-align: center;
-      color: #2a7d54;
-      margin-bottom: 35px;
-      font-size: 32px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    /* About Section */
-    .about {
-      background-color: white;
-      padding: 50px 0;
-      border-radius: 8px;
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .about img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
     }
 
-    /* Contact Section */
-    .contact {
-      background-color: #f4f4f4;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .contact-info {
-      font-size: 18px;
+    .card-header {
+      font-size: 1.5rem;
+      font-weight: 600;
       color: #2a7d54;
-      margin-top: 15px;
     }
 
-    /* Stakeholders Section */
-    .stakeholders {
-      background-color: #ffffff;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .stakeholders .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .stakeholder-card {
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      padding: 20px;
-      width: 280px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .stakeholder-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .stakeholder-card h4 {
-      color: #2a7d54;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .stakeholder-card p {
-      font-size: 16px;
+    .card-body {
+      font-size: 1rem;
       color: #555;
     }
 
-    /* Footer */
-    footer {
+    .card-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .card-list li {
+      margin-bottom: 10px;
+    }
+
+    .play-cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .play-card {
+      background: #2a7d54;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 30%;
+      text-align: center;
+    }
+
+    .play-card h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .play-card p {
+      margin: 0;
+    }
+
+    .footer {
       background-color: #2a7d54;
       color: white;
+      padding: 20px 0;
       text-align: center;
-      padding: 25px 0;
-      font-size: 16px;
     }
 
-    footer a {
-      color: #f4f4f4;
+    .footer a {
+      color: white;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    footer a:hover {
-      color: #f1f1f1;
-    }
-
-    /* Media Queries for Responsiveness */
-    @media screen and (max-width: 768px) {
-      .container {
-        width: 95%;
-      }
-
-      nav ul li {
-        display: block;
-        margin: 15px 0;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 20px;
-      }
-
-      .vision-mission {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .play-card {
-        width: 80%;
-      }
-
-      .stakeholders .container {
-        flex-direction: column;
-      }
-
-      .stakeholder-card {
-        width: 100%;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#vision">Vision & Mission</a></li>
-      <li><a href="#stakeholders">Stakeholders</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <!-- About Us Section -->
+    <div class="section">
+      <h2 class="section-title">ABOUT US</h2>
 
-  <!-- Hero Section -->
-  <div id="home" class="hero">
-    <img src="images/icon.png" alt="SHAP-Uganda Logo" class="logo">
-    <h1>KAN Sustainable Health Action for Development (SHAP-Uganda)</h1>
-    <p>Empowering Communities, Improving Health</p>
-    <p><a href="#about" class="btn">Learn More About Us</a></p>
-  </div>
-
-  <!-- Vision and Mission Play Cards Section -->
-  <div id="vision" class="vision-mission">
-    <div class="play-card">
-      <h3>Vision</h3>
-      <p>A transformed community for better health outcomes.</p>
-    </div>
-    <div class="play-card">
-      <h3>Mission</h3>
-      <p>To improve accessibility to sustainable quality health care through empowering vulnerable communities to embrace health care services and strengthening existing structures at different levels.</p>
-    </div>
-  </div>
-
-  <!-- Stakeholders Section -->
-  <div id="stakeholders" class="stakeholders">
-    <div class="container">
-      <div class="stakeholder-card">
-        <h4>Ministry of Health</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Ministry of Education</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Development Partners</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Office of Resident District Commissioner</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Security Organs</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>District Local Government</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Schools and Health Facilities</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>NGOs/CBOs</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Community Leaders</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Religious Leaders</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Cultural Leaders</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Community Health Workers</h4>
-      </div>
-      <div class="stakeholder-card">
-        <h4>Members of the Community</h4>
+      <div class="card">
+        <div class="card-header">
+          KAN Sustainable Health Action for Development (SHAP-UGANDA) Limited
+        </div>
+        <div class="card-body">
+          <p>
+            KAN Sustainable Health Action for Development (SHAP-UGANDA) Limited is an indigenous Not-For-Profit
+            Non-Governmental Organization that started in 2021 by a group of passionate public health professionals.
+            The organization aims to influence development, provide sustainable, integrated, and quality comprehensive
+            health care services to marginalized and vulnerable individuals in the community through capacity building,
+            empowerment, community-driven health interventions, and community participation.
+          </p>
+          <p>
+            We operate in the Districts of Kamuli, Luuka, Buyende, Kayunga, and Namutumba implementing our interventions
+            in the technical program areas of Integrated Reproductive Maternal, Newborn, Child, and Adolescent Health services,
+            prevention and control of major communicable diseases and non-communicable diseases, health promotion, community
+            health initiatives, environmental health, school health, health system strengthening, as well as gender and health.
+          </p>
+          <p>
+            Our target beneficiaries include Adolescent Girls, Boys and Young Women (AGYW), Orphans and Vulnerable Children (OVC),
+            Women, Youth, Key and Priority Populations, People Living with HIV (PLHIV), and People Living with Disabilities (PLWD).
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- About Us Section -->
-  <div id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">About Us</h2>
-      <p>KAN Sustainable Health Action for Development (SHAP-Uganda) Limited is an indigenous Not-For-Profit Non-Governmental Organization that started in 2021 by a group of passionate public health professionals with the aim of influencing development...</p>
-      <p>We operate in the Districts of Kamuli, Luuka, Buyende, Kayunga, and Namutumba implementing our interventions in the technical program areas of Integrated Reproductive Maternal, Newborn, Child and Adolescent Health services...</p>
-    </div>
-  </div>
+    <!-- Vision, Mission & Values Section -->
+    <div class="section">
+      <h2 class="section-title">VISION, MISSION, VALUES & PRINCIPLES</h2>
 
-  <!-- Contact Section -->
-  <div id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p>If you have any questions or would like to learn more about our initiatives, please reach out to us:</p>
-      <div class="contact-info">
-        <p><strong>Location:</strong> Buyende Town Council, Buyende District, Uganda</p>
-        <p><strong>Phone:</strong> +256782227995</p>
-        <p><strong>Email:</strong> <a href="mailto:shapuganda@gmail.com">shapuganda@gmail.com</a></p>
+      <div class="card">
+        <div class="card-header">
+          Vision
+        </div>
+        <div class="card-body">
+          <p>A transformed community for better health outcomes.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          Mission
+        </div>
+        <div class="card-body">
+          <p>To improve accessibility to sustainable quality health care through empowering vulnerable communities to embrace
+            health care services and strengthening existing structures at different levels.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          Core Values
+        </div>
+        <div class="card-body">
+          <ul class="card-list">
+            <li><strong>Transparency:</strong> We will openly share our intentions and inform the public about the availability of
+              funding for any projects to be implemented.</li>
+            <li><strong>Inclusiveness & Equity:</strong> SHAP-UGANDA will not discriminate against anyone and will allocate resources based on individual circumstances.</li>
+            <li><strong>Professionalism & Probity:</strong> Members will uphold the highest level of ethics and responsibility in their work.</li>
+            <li><strong>Innovativeness & Sustainability:</strong> Individuals are encouraged to exercise creativity to add value to the community.</li>
+            <li><strong>Accountability:</strong> SHAP-UGANDA and its employees shall be accountable for the organization’s performance, goals, and resources.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 KAN Sustainable Health Action for Development | SHAP-Uganda | All Rights Reserved</p>
-  </footer>
+    <!-- Objectives Section -->
+    <div class="section">
+      <h2 class="section-title">OBJECTIVES</h2>
+
+      <div class="card">
+        <div class="card-header">
+          Strategic Objectives/Program Areas
+        </div>
+        <div class="card-body">
+          <ul class="card-list">
+            <li><strong>Community health system strengthening and health promotion:</strong> Capacity building of health service providers,
+              health activities implementation, health system and structural development, health research, and ONE health programming.</li>
+            <li><strong>Community economic empowerment:</strong> Crosscutting program areas like Gender, inclusion, child protection,
+              and climate change adaptation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          Specific Objectives
+        </div>
+        <div class="card-body">
+          <ul class="card-list">
+            <li>Promote the availability, accessibility, and utilization of health care services through awareness and resource mobilization.</li>
+            <li>Support the Government of Uganda in the implementation of Minimum Primary Health Care Packages.</li>
+            <li>Contribute to a socially, economically, legally, and politically empowered community through advocacy and capacity building.</li>
+            <li>Collaborate with existing stakeholders for the provision of quality health care services.</li>
+            <li>Contribute towards child protection services in the community.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stakeholders Section -->
+    <div class="section">
+      <h2 class="section-title">STAKEHOLDERS</h2>
+      <div class="play-cards">
+        <div class="play-card">
+          <h3>Ministry of Health</h3>
+        </div>
+        <div class="play-card">
+          <h3>Ministry of Education</h3>
+        </div>
+        <div class="play-card">
+          <h3>Development Partners</h3>
+        </div>
+        <div class="play-card">
+          <h3>Office of the Resident District Commissioner</h3>
+        </div>
+        <div class="play-card">
+          <h3>Security Organs</h3>
+        </div>
+        <div class="play-card">
+          <h3>District Local Government</h3>
+        </div>
+        <div class="play-card">
+          <h3>Schools and Health Facilities</h3>
+        </div>
+        <div class="play-card">
+          <h3>NGOs/CBOs</h3>
+        </div>
+        <div class="play-card">
+          <h3>Community Leaders</h3>
+        </div>
+        <div class="play-card">
+          <h3>Religious Leaders</h3>
+        </div>
+        <div class="play-card">
+          <h3>Cultural Leaders</h3>
+        </div>
+        <div class="play-card">
+          <h3>Community Health Workers</h3>
+        </div>
+        <div class="play-card">
+          <h3>Members of the Community</h3>
+        </div>
+        <div class="play-card">
+          <h3>Staff of SHAP-Uganda</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <p>&copy; 2024 SHAP-Uganda. All rights reserved.</p>
+    </div>
+
+  </div>
 
 </body>
 
