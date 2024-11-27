@@ -152,6 +152,33 @@ nav ul li a:hover {
 
 .about-services-list li {
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px; /* Space for larger bullet */
+}
+
+/* Creating larger bullets */
+.about-services-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Larger bullet size */
+  height: 20px;
+  background-color: #2a7d54; /* Green color */
+  border-radius: 50%;
+}
+
+.about-services-list li small-bullet:before {
+  content: '';
+  position: absolute;
+  left: 6px; /* Position the smaller bullet within the larger one */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Smaller bullet size */
+  height: 10px;
+  background-color: white; /* White color for smaller bullet */
+  border-radius: 50%;
 }
 
 /* Target Groups Section */
@@ -164,6 +191,37 @@ nav ul li a:hover {
 .about-target-groups ul {
   list-style-type: disc;
   padding-left: 20px;
+}
+
+.about-target-groups li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px; /* Space for larger bullet */
+}
+
+/* Creating larger bullets */
+.about-target-groups li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Larger bullet size */
+  height: 20px;
+  background-color: #2a7d54; /* Green color */
+  border-radius: 50%;
+}
+
+.about-target-groups li small-bullet:before {
+  content: '';
+  position: absolute;
+  left: 6px; /* Position the smaller bullet within the larger one */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px; /* Smaller bullet size */
+  height: 10px;
+  background-color: white; /* White color for smaller bullet */
+  border-radius: 50%;
 }
 
 /* Responsive Design */
