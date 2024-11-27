@@ -11,28 +11,36 @@ body {
   color: #333;
 }
 
-h1, h2, h3 {
-  color: #2a7d54; /* Primary color */
-  text-align: center;
-}
-
-p {
-  text-align: center;
-  font-size: 18px;
-  color: #555;
-}
-
 /* Navigation */
 nav {
   background-color: #2a7d54;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
 }
 
 nav ul li {
@@ -43,7 +51,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -81,6 +88,7 @@ nav ul li a:hover {
 .about-us {
   padding: 50px 20px;
   background-color: #f4f4f4;
+  text-align: center;
 }
 
 .about-us ul {
@@ -92,8 +100,9 @@ nav ul li a:hover {
 .vision-mission {
   display: flex;
   justify-content: center;
-  padding: 50px 20px;
   gap: 40px;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .vision, .mission {
@@ -113,54 +122,68 @@ nav ul li a:hover {
 .vision p, .mission p {
   font-size: 18px;
   text-align: justify;
-  color: #555;
 }
 
 /* Objectives Section */
 .objectives {
   padding: 50px 20px;
+  text-align: center;
 }
 
-.objectives h3 {
-  font-size: 24px;
+.objectives h2 {
   color: #2a7d54;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .objectives ul {
   list-style-type: square;
   margin-left: 20px;
   font-size: 18px;
-  color: #555;
+}
+
+.strategic, .specific {
+  margin-bottom: 40px;
 }
 
 /* Stakeholders Section */
 .stakeholders {
   padding: 50px 20px;
-  background-color: #f4f4f4;
+  background-color: #e9f5e8;
+  text-align: center;
+}
+
+.stakeholder-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .stakeholder-card {
   background-color: #fff;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 16px;
+  color: #2a7d54;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.stakeholder-card h4 {
-  font-size: 20px;
-  color: #2a7d54;
+.stakeholder-card:hover {
+  background-color: #e2f5e3;
 }
 
 /* Contact Section */
 .contact {
   padding: 50px 20px;
+  text-align: center;
 }
 
 .contact p {
   font-size: 18px;
-  text-align: center;
+  color: #555;
 }
 
 /* Footer */
@@ -169,5 +192,42 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+  margin-top: 50px;
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .vision-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision, .mission {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .stakeholder-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stakeholder-card {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
