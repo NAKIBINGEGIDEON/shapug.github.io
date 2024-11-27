@@ -66,54 +66,83 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
 .hero .btn {
-  background-color: #1e5d40;
-  padding: 14px 30px;
-  border-radius: 30px;
-  color: white;
+  background-color: #e9f5e8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #2a7d54;
   text-decoration: none;
+  font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .hero .btn:hover {
   background-color: #2a7d54;
+  color: white;
 }
 
 /* About Us Section */
 .about-us {
   padding: 50px 20px;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
-.about-us .about-content h3 {
-  font-size: 24px;
+.about-us h2 {
   color: #2a7d54;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h3 {
+  color: #2a7d54;
+  font-size: 28px;
   margin-top: 20px;
 }
 
-.about-us p, .about-us ul {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.about-us ul {
+.about-content ul {
   list-style-type: disc;
-  margin-left: 20px;
+  padding-left: 40px;
+  font-size: 18px;
 }
 
-/* Vision and Mission Section */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  font-size: 16px;
+  color: #2a7d54;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  background-color: #e9f5e8;
+}
+
+/* Vision & Mission Section */
 .vision-mission {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-around;
   padding: 50px 20px;
-  text-align: center;
 }
 
 .vision, .mission {
@@ -142,14 +171,42 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.objectives ul {
-  list-style-type: square;
-  margin-left: 20px;
-  font-size: 18px;
+.major-objectives .major-title {
+  font-size: 28px;
+  color: #2a7d54;
+  margin-bottom: 20px;
 }
 
-.strategic, .specific {
-  margin-bottom: 40px;
+.major-objectives .major-objective {
+  background-color: #e9f5e8;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.major-objective h4 {
+  color: #2a7d54;
+  font-size: 22px;
+}
+
+.specific-objectives {
+  margin-top: 15px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.specific-objectives .specific {
+  margin-bottom: 10px;
+}
+
+.specific-title {
+  font-size: 24px;
+  color: #2a7d54;
+}
+
+.specific ul {
+  padding-left: 40px;
+  font-size: 18px;
 }
 
 /* Stakeholders Section */
@@ -221,6 +278,16 @@ footer {
   .stakeholder-card {
     width: 90%;
     margin-bottom: 10px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    margin-bottom: 15px;
   }
 }
 
