@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2a7d54; /* Primary color */
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Navigation */
+nav {
+  background-color: #2a7d54;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #2a7d54;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.hero .btn {
+  background-color: #1e5d40;
+  padding: 14px 30px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero .btn:hover {
+  background-color: #2a7d54;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.about-us ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Vision and Mission Section */
+.vision-mission {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 40px;
+}
+
+.vision, .mission {
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+.vision h3, .mission h3 {
+  font-size: 24px;
+  color: #2a7d54;
+}
+
+.vision p, .mission p {
+  font-size: 18px;
+  text-align: justify;
+  color: #555;
+}
+
+/* Objectives Section */
+.objectives {
+  padding: 50px 20px;
+}
+
+.objectives h3 {
+  font-size: 24px;
+  color: #2a7d54;
+  margin-bottom: 10px;
+}
+
+.objectives ul {
+  list-style-type: square;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Stakeholders Section */
+.stakeholders {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.stakeholder-card {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stakeholder-card h4 {
+  font-size: 20px;
+  color: #2a7d54;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #2a7d54;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
