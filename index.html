@@ -1,340 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHAP-Uganda | Sustainable Health Action for Development</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    h1, h2, h3 {
-      color: #2a7d54;
-      font-weight: 700;
-    }
-
-    .btn {
-      background: linear-gradient(to right, #2a7d54, #1e5d40);
-      color: white;
-      padding: 14px 30px;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: linear-gradient(to right, #1e5d40, #2a7d54);
-      transform: translateY(-4px);
-    }
-
-    .container {
-      width: 90%;
-      margin: 0 auto;
-      padding: 40px 0;
-    }
-
-    /* Navigation */
-    nav {
-      background-color: #2a7d54;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin: 0 25px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #f4f4f4;
-    }
-
-    /* Hero Section */
-    .hero {
-      background-color: #2a7d54; /* Solid background */
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 100px;
-      height: auto;
-    }
-
-    .hero h1 {
-      font-size: 50px;
-      font-weight: 700;
-      margin-bottom: 25px;
-      color: white;
-    }
-
-    .hero p {
-      font-size: 24px;
-      margin-bottom: 35px;
-      font-weight: 500;
-    }
-
-    /* Vision and Mission Play Cards */
-    .vision-mission {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 50px;
-    }
-
-    .play-card {
-      background-color: #ffffff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      padding: 20px;
-      width: 45%;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .play-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .play-card h3 {
-      color: #2a7d54;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .play-card p {
-      font-size: 18px;
-      color: #555;
-    }
-
-    /* Section Titles */
-    .section-title {
-      text-align: center;
-      color: #2a7d54;
-      margin-bottom: 35px;
-      font-size: 32px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    /* About Section */
-    .about {
-      background-color: white;
-      padding: 50px 0;
-      border-radius: 8px;
-      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .about img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    /* Contact Section */
-    .contact {
-      background-color: #f4f4f4;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .contact-info {
-      font-size: 18px;
-      color: #2a7d54;
-      margin-top: 15px;
-    }
-
-    /* Stakeholders Section */
-    .stakeholders {
-      background-color: #ffffff;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .stakeholders ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .stakeholders ul li {
-      font-size: 18px;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #2a7d54;
-      color: white;
-      text-align: center;
-      padding: 25px 0;
-      font-size: 16px;
-    }
-
-    footer a {
-      color: #f4f4f4;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer a:hover {
-      color: #f1f1f1;
-    }
-
-    /* Media Queries for Responsiveness */
-    @media screen and (max-width: 768px) {
-      .container {
-        width: 95%;
-      }
-
-      nav ul li {
-        display: block;
-        margin: 15px 0;
-      }
-
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 20px;
-      }
-
-      .vision-mission {
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .play-card {
-        width: 80%;
-      }
-    }
-  </style>
+  <title>SHAP Uganda</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- Navigation -->
-  <nav>
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about-us">About Us</a></li>
+    <li><a href="#vision-mission">Vision & Mission</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#stakeholders">Stakeholders</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+  <h1>Welcome to SHAP Uganda</h1>
+  <p>Improving health and empowering communities for sustainable development</p>
+  <a href="#objectives" class="btn">Our Objectives</a>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="about-us">
+  <h2>About Us</h2>
+  <p><strong>KAN Sustainable Health Action for Development (SHAP-UGANDA) Limited</strong> is an indigenous Not-For-Profit Non-Governmental Organization established in 2021. It was founded by a group of passionate public health professionals with the aim of influencing development and providing sustainable, integrated, and quality comprehensive healthcare services to the most marginalized and vulnerable individuals in the community.</p>
+  <p>We operate in the Districts of Kamuli, Luuka, Buyende, Kayunga, and Namutumba, implementing our interventions in the technical program areas of:</p>
+  <ul>
+    <li>Integrated Reproductive Maternal, Newborn, Child, and Adolescent Health services</li>
+    <li>Prevention and control of major communicable diseases</li>
+    <li>Health promotion and community health initiatives</li>
+    <li>Environmental health and school health</li>
+    <li>Health system strengthening and gender equality</li>
+  </ul>
+  <p>Our target beneficiaries include Adolescent girls, boys and young women (AGYW), Orphans and Vulnerable Children (OVC), Women, Youths, Key and Priority Populations, People living with HIV (PLHIV), and People living with Disabilities (PLWD).</p>
+</section>
+
+<!-- Vision and Mission Section -->
+<section id="vision-mission" class="vision-mission">
+  <div class="vision">
+    <h3>Vision</h3>
+    <p>A transformed community for better health outcomes.</p>
+  </div>
+  <div class="mission">
+    <h3>Mission</h3>
+    <p>To improve accessibility to sustainable quality healthcare through empowering vulnerable communities to embrace healthcare services and strengthening existing structures at different levels.</p>
+  </div>
+</section>
+
+<!-- Objectives Section -->
+<section id="objectives" class="objectives">
+  <h2>Objectives / Aims</h2>
+  <div class="strategic">
+    <h3>Strategic Objectives / Program Areas</h3>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#vision">Vision & Mission</a></li>
-      <li><a href="#objectives">Objectives</a></li>
-      <li><a href="#stakeholders">Stakeholders</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>Community health system strengthening and health promotion</li>
+      <li>Community economic empowerment</li>
     </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <div id="home" class="hero">
-    <img src="images/icon.png" alt="SHAP-Uganda Logo" class="logo">
-    <h1>KAN Sustainable Health Action for Development (SHAP-Uganda)</h1>
-    <p>Empowering Communities, Improving Health</p>
-    <p><a href="#about" class="btn">Learn More About Us</a></p>
   </div>
-
-  <!-- Vision & Mission Play Cards Section -->
-  <div id="vision" class="vision-mission">
-    <div class="play-card">
-      <h3>Vision</h3>
-      <p>A transformed community for better health outcomes.</p>
-    </div>
-    <div class="play-card">
-      <h3>Mission</h3>
-      <p>To improve accessibility to sustainable quality health care through empowering vulnerable communities to embrace health care services and strengthening existing structures at different levels.</p>
-    </div>
+  <div class="specific">
+    <h3>Specific Objectives</h3>
+    <ul>
+      <li>Promote the availability, accessibility, and utilization of healthcare services through awareness creation and resource mobilization.</li>
+      <li>Support the Government of Uganda in the implementation of Minimum Primary Health Care Packages.</li>
+      <li>Contribute to a socially, economically, legally, and politically empowered community through advocacy and capacity building.</li>
+      <li>Collaborate with existing stakeholders toward providing quality healthcare services.</li>
+      <li>Contribute towards child protection services in the community.</li>
+    </ul>
   </div>
+</section>
 
-  <!-- Stakeholders Section -->
-  <div id="stakeholders" class="stakeholders">
-    <div class="container">
-      <h2 class="section-title">Our Stakeholders</h2>
-      <ul>
-        <li>Ministry of Health</li>
-        <li>Ministry of Education</li>
-        <li>Development Partners</li>
-        <li>Office of Resident District Commissioner</li>
-        <li>Security Organs</li>
-        <li>District Local Government</li>
-        <li>Schools and Health Facilities</li>
-        <li>NGOs/CBOs</li>
-        <li>Community Leaders</li>
-        <li>Religious Leaders</li>
-        <li>Cultural Leaders</li>
-        <li>Community Health Workers</li>
-        <li>Members of the Community</li>
-        <li>Staff of SHAP-Uganda</li>
-      </ul>
-    </div>
+<!-- Stakeholders Section -->
+<section id="stakeholders" class="stakeholders">
+  <h2>Our Stakeholders</h2>
+  <div class="stakeholder-card">
+    <h4>Ministry of Health</h4>
   </div>
-
-  <!-- About Section -->
-  <div id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">About Us</h2>
-      <p>KAN Sustainable Health Action for Development (SHAP-Uganda) Limited is an indigenous Not-For-Profit Non-Governmental Organization that started in 2021 by a group of passionate public health professionals with the aim of influencing development...</p>
-    </div>
+  <div class="stakeholder-card">
+    <h4>Ministry of Education</h4>
   </div>
-
-  <!-- Contact Section -->
-  <div id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p>If you have any questions or would like to learn more about our initiatives, please reach out to us:</p>
-      <div class="contact-info">
-        <p><strong>Location:</strong> Buyende Town Council, Buyende District, Uganda</p>
-        <p><strong>Phone:</strong> +256782227995</p>
-        <p><strong>Email:</strong> <a href="mailto:shapuganda@gmail.com">shapuganda@gmail.com</a></p>
-      </div>
-    </div>
+  <div class="stakeholder-card">
+    <h4>Development Partners</h4>
   </div>
+  <div class="stakeholder-card">
+    <h4>Office of the Resident District Commissioner</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Security Organs</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>District Local Government</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Schools and Health Facilities</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>NGOs / CBOs</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Community Leaders</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Religious Leaders</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Cultural Leaders</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Community Health Workers</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Members of the Community</h4>
+  </div>
+  <div class="stakeholder-card">
+    <h4>Staff of SHAP-Uganda</h4>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 KAN Sustainable Health Action for Development | SHAP-Uganda | All Rights Reserved</p>
-  </footer>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>For more information, reach us at:</p>
+  <p><strong>Email:</strong> shapuganda@gmail.com</p>
+  <p><strong>Phone:</strong> 0782227995</p>
+  <p><strong>Location:</strong> Buyende Town Council, Buyende District, Uganda</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 SHAP Uganda | All rights reserved.</p>
+</footer>
 
 </body>
-
 </html>
