@@ -191,15 +191,36 @@
       text-align: center;
     }
 
-    .stakeholders ul {
-      list-style-type: none;
-      padding: 0;
+    .stakeholders .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
-    .stakeholders ul li {
-      font-size: 18px;
+    .stakeholder-card {
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .stakeholder-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stakeholder-card h4 {
+      color: #2a7d54;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .stakeholder-card p {
+      font-size: 16px;
       color: #555;
-      margin-bottom: 10px;
     }
 
     /* Footer */
@@ -248,6 +269,14 @@
       .play-card {
         width: 80%;
       }
+
+      .stakeholders .container {
+        flex-direction: column;
+      }
+
+      .stakeholder-card {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -260,7 +289,6 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#vision">Vision & Mission</a></li>
-      <li><a href="#objectives">Objectives</a></li>
       <li><a href="#stakeholders">Stakeholders</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -274,7 +302,7 @@
     <p><a href="#about" class="btn">Learn More About Us</a></p>
   </div>
 
-  <!-- Vision & Mission Play Cards Section -->
+  <!-- Vision and Mission Play Cards Section -->
   <div id="vision" class="vision-mission">
     <div class="play-card">
       <h3>Vision</h3>
@@ -289,31 +317,54 @@
   <!-- Stakeholders Section -->
   <div id="stakeholders" class="stakeholders">
     <div class="container">
-      <h2 class="section-title">Our Stakeholders</h2>
-      <ul>
-        <li>Ministry of Health</li>
-        <li>Ministry of Education</li>
-        <li>Development Partners</li>
-        <li>Office of Resident District Commissioner</li>
-        <li>Security Organs</li>
-        <li>District Local Government</li>
-        <li>Schools and Health Facilities</li>
-        <li>NGOs/CBOs</li>
-        <li>Community Leaders</li>
-        <li>Religious Leaders</li>
-        <li>Cultural Leaders</li>
-        <li>Community Health Workers</li>
-        <li>Members of the Community</li>
-        <li>Staff of SHAP-Uganda</li>
-      </ul>
+      <div class="stakeholder-card">
+        <h4>Ministry of Health</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Ministry of Education</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Development Partners</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Office of Resident District Commissioner</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Security Organs</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>District Local Government</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Schools and Health Facilities</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>NGOs/CBOs</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Community Leaders</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Religious Leaders</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Cultural Leaders</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Community Health Workers</h4>
+      </div>
+      <div class="stakeholder-card">
+        <h4>Members of the Community</h4>
+      </div>
     </div>
   </div>
 
-  <!-- About Section -->
+  <!-- About Us Section -->
   <div id="about" class="about">
     <div class="container">
       <h2 class="section-title">About Us</h2>
       <p>KAN Sustainable Health Action for Development (SHAP-Uganda) Limited is an indigenous Not-For-Profit Non-Governmental Organization that started in 2021 by a group of passionate public health professionals with the aim of influencing development...</p>
+      <p>We operate in the Districts of Kamuli, Luuka, Buyende, Kayunga, and Namutumba implementing our interventions in the technical program areas of Integrated Reproductive Maternal, Newborn, Child and Adolescent Health services...</p>
     </div>
   </div>
 
