@@ -91,6 +91,17 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.about-us .about-content h3 {
+  font-size: 24px;
+  color: #2a7d54;
+  margin-top: 20px;
+}
+
+.about-us p, .about-us ul {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 .about-us ul {
   list-style-type: disc;
   margin-left: 20px;
@@ -106,12 +117,7 @@ nav ul li a:hover {
 }
 
 .vision, .mission {
-  background-color: #fff;
-  padding: 30px;
-  margin: 0 10px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  width: 45%;
 }
 
 .vision h3, .mission h3 {
@@ -121,7 +127,7 @@ nav ul li a:hover {
 
 .vision p, .mission p {
   font-size: 18px;
-  text-align: justify;
+  color: #555;
 }
 
 /* Objectives Section */
