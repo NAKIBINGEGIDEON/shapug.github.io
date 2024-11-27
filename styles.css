@@ -94,49 +94,72 @@ nav ul li a:hover {
 .about-us h2 {
   color: #2a7d54;
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.about-content {
-  text-align: left;
-  max-width: 900px;
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.about-content h3 {
-  color: #2a7d54;
-  font-size: 28px;
-  margin-top: 20px;
-}
-
-.about-content ul {
-  list-style-type: disc;
-  padding-left: 40px;
-  font-size: 18px;
-}
-
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.service-card {
-  background-color: #fff;
-  padding: 15px;
+/* Card Styling */
+.about-card {
+  background-color: #ffffff;
+  padding: 25px;
   border-radius: 8px;
-  width: 200px;
-  font-size: 16px;
-  color: #2a7d54;
-  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
 }
 
-.service-card:hover {
-  background-color: #e9f5e8;
+.about-card h3 {
+  font-size: 24px;
+  color: #2a7d54;
+  margin-bottom: 20px;
 }
+
+.about-card p,
+.about-card ul {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.about-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Hover Effect for Cards */
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .about-us h2 {
+    font-size: 30px;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us h2 {
+    font-size: 28px;
+  }
+}
+
 
 /* Vision & Mission Section */
 .vision-mission {
